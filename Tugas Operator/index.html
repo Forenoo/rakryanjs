@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tugas Operator Nomor 1</title>
+  </head>
+
+  <body>
+    <script>
+      let gender = prompt("Tuliskan Jenis Kelamin Anda (Wanita / Pria) :");
+      let tinggiBadan = prompt("Masukkan Tinggi Badan Anda (cm) :");
+
+      const rumusBeratBadanPria =
+        (tinggiBadan - 100) - ((tinggiBadan - 100) * 0.15);
+      const rumusBeratBadanWanita =
+        (tinggiBadan - 100) - ((tinggiBadan - 100) * 0.1);
+
+      let result =
+        gender === "Pria"
+          ? `Berat badan ideal anda adalah ${rumusBeratBadanPria} kg`
+          : `Berat badan ideal anda adalah ${rumusBeratBadanWanita} kg`;
+
+      alert(result);
+    </script>
+  </body>
+</html>
