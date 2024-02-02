@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tugas Percabangan Nomor 2</title>
+  </head>
+  <body>
+    <script>
+      let kelengkapanStatus = prompt(
+        "Apakah anda membawa seluruh perlengkapan?\n1. Ya \n2. Tidak"
+      );
+
+      if (kelengkapanStatus == 1) {
+        document.write("<h1>Anda diizinkan untuk mengikuti ujian");
+      } else if (kelengkapanStatus == 2) {
+        let kartuIdentitasStatus = confirm("Apakah anda membawa kartu identitas?");
+
+        if (kartuIdentitasStatus) {
+          document.write("<h1>Anda diizinkan untuk mengikuti ujian");
+        } else {
+          document.write("<h1>Anda tidak diizinkan untuk mengikuti ujian");
+        }
+      } else {
+        alert("Pilihan tidak valid");
+      }
+    </script>
+  </body>
+</html>
